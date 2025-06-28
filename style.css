@@ -9,33 +9,32 @@
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 h1 > span {
     font-family: fonetica;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    width: fit-content;
+    min-height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: beige;
-
-    overflow: auto;
 }
 
 textarea {
     font-family: fonetica;
     font-size: 40px;
     width: 80vw;
-    height: 80vh;
-    min-height: 100px;
-    resize: none;
+    min-height: 3em;
+    resize: vertical;
     padding: 10px;
     background-color: beige;
     border: none;
