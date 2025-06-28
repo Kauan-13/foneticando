@@ -1,0 +1,45 @@
+@font-face {
+   font-family: fonetica;
+   src: url(./public/sildipar.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h1 > span {
+    font-family: fonetica;
+    font-size: 80px;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+textarea {
+    font-family: fonetica;
+    font-size: 40px;
+    width: 80vw;
+    height: 80vh;
+    resize: none;
+    padding: 10px;
+    background-color: beige;
+    border: none;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+textarea:focus {
+    outline: none;
+}
