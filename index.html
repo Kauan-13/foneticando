@@ -4,12 +4,304 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
     <title>Foneticando</title>
 </head>
 <body>
     <main>
         <h1>Foneticando <span>U</span></h1>
         <textarea id="area-texto"></textarea>
+        <table>
+            <caption>
+                Os símbolos à direita em uma célula são vozalizados, à esquerda são não vozalizados. As áreas sombreadas denotam articulações consideradas impossíveis.
+            </caption>
+            <tr>
+                <th></th>
+                <th colspan="2">Bilabial</th>
+                <th colspan="2">Labiodental</th>
+                <th colspan="2">Dental</th>
+                <th colspan="2">Alveolar</th>
+                <th colspan="2">Pós-alveolar</th>
+                <th colspan="2">Retroflex</th>
+                <th colspan="2">Palatal</th>
+                <th colspan="2">Velar</th>
+                <th colspan="2">Uvular</th>
+                <th colspan="2">Faríngeo</th>
+                <th colspan="2">Glotal</th>
+            </tr>
+            <tr>
+                <th>Plosiva</th>
+                <td style="border-right: none">
+                    <button class="btn" value="p">p</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="b">b</button>
+                </td>
+                <td colspan="2"></td>
+                <td colspan="2" style="border-right: none"></td>
+                <td style="border-left: none; border-right: none">
+                    <button class="btn" value="t">t</button>
+                </td>
+                <td style="border-left: none; border-right: none">
+                    <button class="btn" value="d">d</button>
+                </td>
+                <td colspan="2" style="border-left: none"></td>
+                <td style="border-right: none">
+                    <button class="btn" value="ʈ">ʈ</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɖ">ɖ</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="c">c</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɟ">ɟ</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="k">k</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɡ">ɡ</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="q">q</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɢ">ɢ</button>
+                </td>
+                <td></td>
+                <td class="escuro"></td>
+                <td>
+                    <button class="btn" value="ʔ">ʔ</button>
+                </td>
+                <td class="escuro"></td>
+            </tr>
+            <tr>
+                <th>Nasal</th>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="m">m</button>
+                </td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɱ">ɱ</button>
+                </td>
+                <td colspan="2" style="border-right: none"></td>
+                <td style="border-left: none; border-right: none"></td>
+                <td style="border-left: none; border-right: none">
+                    <button class="btn" value="n">n</button>
+                </td>
+                <td colspan="2" style="border-left: none"></td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɳ">ɳ</button>
+                </td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɲ">ɲ</button>
+                </td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ŋ">ŋ</button>
+                </td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɴ">ɴ</button>
+                </td>
+                <td colspan="2" class="escuro"></td>
+                <td colspan="2" class="escuro"></td>
+            </tr>
+            <tr>
+                <th>Trinado</th>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ʙ">ʙ</button>
+                </td>
+                <td colspan="2"></td>
+                <td colspan="2" style="border-right: none"></td>
+                <td style="border-left: none; border-right: none"></td>
+                <td style="border-left: none; border-right: none">
+                    <button class="btn" value="r">r</button>
+                </td>
+                <td colspan="2" style="border-left: none"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2" class="escuro"></td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ʀ">ʀ</button>
+                </td>
+                <td colspan="2"></td>
+                <td colspan="2" class="escuro"></td>
+            </tr>
+            <tr>
+                <th>Toque ou bata</th>
+                <td colspan="2"></td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ⱱ">ⱱ</button>
+                </td>
+                <td colspan="2" style="border-left: none; border-right: none"></td>
+                <td style="border-left: none; border-right: none"></td>
+                <td style="border-left: none; border-right: none">
+                    <button class="btn" value="ɾ">ɾ</button>
+                </td>
+                <td colspan="2" style="border-left: none"></td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɽ">ɽ</button>
+                </td>
+                <td colspan="2"></td>
+                <td colspan="2" class="escuro"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2" class="escuro"></td>
+            </tr>
+            <tr>
+                <th>Fricativa</th>
+                <td style="border-right: none">
+                    <button class="btn" value="ɸ">ɸ</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="β">β</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="f">f</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="v">v</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="θ">θ</button>
+                </td>
+                <td style="border-left: none">    
+                     <button class="btn" value="ð">ð</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="s">s</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="z">z</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="ʃ">ʃ</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ʒ">ʒ</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="ʂ">ʂ</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ʐ">ʐ</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="ç">ç</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ʝ">ʝ</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="x">x</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɣ">ɣ</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="χ">χ</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ʁ">ʁ</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="ħ">ħ</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ʕ">ʕ</button>
+                </td>
+                <td style="border-right: none">
+                    <button class="btn" value="h">h</button>
+                </td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɦ">ɦ</button>
+                </td>
+            </tr>
+            <tr>
+                <th>Fricativa lateral</th>
+                <td colspan="2" class="escuro"></td>
+                <td colspan="2" class="escuro"></td>
+                <td colspan="2" style="border-right: none"></td>
+                <td style="border-left: none; border-right: none">
+                    <button class="btn" value="ɬ">ɬ</button>
+                </td>
+                <td style="border-left: none; border-right: none">
+                    <button class="btn" value="ɮ">ɮ</button>
+                </td>
+                <td colspan="2" style="border-left: none"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2" class="escuro"></td>
+                <td colspan="2" class="escuro"></td>
+            </tr>
+            <tr>
+                <th>Aproximado</th>
+                <td colspan="2"></td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ʋ">ʋ</button>
+                </td>
+                <td colspan="2" style="border-right: none"></td>
+                <td style="border-left: none; border-right: none"></td>
+                <td style="border-left: none; border-right: none">
+                    <button class="btn" value="ɹ">ɹ</button>
+                </td>
+                <td colspan="2" style="border-left: none"></td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɻ">ɻ</button>
+                </td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="j">j</button>
+                </td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɰ">ɰ</button>
+                </td>
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td colspan="2" class="escuro"></td>
+            </tr>
+            <tr>
+                <th>Aproximante lateral</th>
+                <td colspan="2" class="escuro"></td>
+                <td colspan="2" class="escuro"></td>
+                <td colspan="2" style="border-right: none"></td>
+                <td style="border-left: none; border-right: none"></td>
+                <td style="border-left: none; border-right: none">
+                    <button class="btn" value="l">l</button>
+                </td>
+                <td colspan="2" style="border-left: none"></td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ɭ">ɭ</button>
+                </td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ʎ">ʎ</button>
+                </td>
+                <td style="border-right: none"></td>
+                <td style="border-left: none">
+                    <button class="btn" value="ʟ">ʟ</button>
+                </td>
+                <td colspan="2"></td>
+                <td colspan="2" class="escuro"></td>
+                <td colspan="2" class="escuro"></td>
+            </tr>
+        </table>
     </main>
 </body>
 </html>

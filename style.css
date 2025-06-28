@@ -25,6 +25,8 @@ main {
     justify-content: center;
     align-items: center;
     background-color: beige;
+
+    overflow: auto;
 }
 
 textarea {
@@ -32,14 +34,56 @@ textarea {
     font-size: 40px;
     width: 80vw;
     height: 80vh;
+    min-height: 100px;
     resize: none;
     padding: 10px;
     background-color: beige;
     border: none;
     border-right: 2px solid black;
     border-left: 2px solid black;
+
+    margin-bottom: 50px;
 }
 
 textarea:focus {
     outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center
+}
+
+th {
+    background-color: rgb(220, 220, 80);
+}
+
+td {
+    min-width: 40px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.btn {
+    font-family: fonetica;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.escuro {
+    background-color: rgb(222, 222, 150);
 }
