@@ -70,7 +70,7 @@ th {
 }
 
 td {
-    width: 40px;
+    min-width: 40px;
 }
 
 caption {
@@ -84,6 +84,7 @@ caption {
     font-size: 30px;
     border: none;
     background-color: transparent;
+    width: 100%;
 }
 
 .btn:hover {
@@ -94,20 +95,8 @@ caption {
     background-color: rgb(222, 222, 150);
 }
 
-.tabela-vogais {
-    border: 2px solid black;
-    background-color: rgb(222, 222, 150);
-}
-
-.tabela-vogais td {
-    width: fit-content;
-}
-
-.tabela-vogais th {
-    background-color: transparent;
-}
-
-.tabela-vogais th, .tabela-vogais td {
-    border: none;
-    text-align: center;
+.outros-simbolos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
