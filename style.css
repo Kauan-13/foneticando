@@ -17,8 +17,15 @@ h1 > span {
     font-size: 60px;
 }
 
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+
 main {
-    min-width: 100vw;
+    min-width: 100%;
     width: fit-content;
     min-height: 100vh;
     height: fit-content;
@@ -63,7 +70,7 @@ th {
 }
 
 td {
-    min-width: 40px;
+    width: 40px;
 }
 
 caption {
@@ -85,4 +92,22 @@ caption {
 
 .escuro {
     background-color: rgb(222, 222, 150);
+}
+
+.tabela-vogais {
+    border: 2px solid black;
+    background-color: rgb(222, 222, 150);
+}
+
+.tabela-vogais td {
+    width: fit-content;
+}
+
+.tabela-vogais th {
+    background-color: transparent;
+}
+
+.tabela-vogais th, .tabela-vogais td {
+    border: none;
+    text-align: center;
 }
